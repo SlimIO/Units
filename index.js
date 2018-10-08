@@ -29,11 +29,11 @@ class Unit {
      * @param {Number} options.min min
      * @param {Number} options.max max
      */
-    constructor(options = {}) {
+    constructor(options = Object.create(null)) {
         this.type = options.type;
         this.symbol = options.symbol ? options.symbol : undefined;
-        this.min = options.min ? options.min : -Infinity;
-        this.max = options.max ? options.max : Infinity;
+        this.min = typeof options.min === "number" ? options.min : -Infinity;
+        this.max = typeof options.max === "number" ? options.max : Infinity;
     }
 
 }
