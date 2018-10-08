@@ -4,7 +4,7 @@
   "description": "SlimIO Units",
   "main": "index.js",
   "engines": {
-      "node": ">=8"
+    "node": ">=8"
   },
   "private": false,
   "scripts": {
@@ -31,5 +31,8 @@
     "eslint": "^5.6.0",
     "jsdoc": "^3.5.5",
     "nyc": "^13.0.1"
+  },
+  "dependencies": {
+    "@slimio/is": "^1.1.0"
   }
 }
