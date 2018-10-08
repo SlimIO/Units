@@ -103,4 +103,9 @@ ava("Get when calculated", (assert) => {
     result = degree.get("F");
     assert.is(result.value, 68);
     assert.is(result.unit, "F");
+
+    
+    result = degree.get("F", 2);
+    assert.is(result.value, 68.00);
+    assert.is(result.unit, "F");
 });

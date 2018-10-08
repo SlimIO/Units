@@ -46,9 +46,7 @@ class Degree extends Units {
         }
 
         if (is.nullOrUndefined(unit)) {
-            const value = toFixed ? Number(this.value.toFixed(toFixed)) : this.value;
-
-            return { value, unit: this.unit };
+            return { value: this.value, unit: this.unit };
         }
 
         if (!Degree.units.has(unit)) {
