@@ -1,5 +1,7 @@
 /// <reference types="node" />
 
+
+
 declare namespace Units {
 
     interface UnitOption {
@@ -8,10 +10,10 @@ declare namespace Units {
         min: number,
         max: number
     }
-
+    
     declare class Unit {
         constructor(options?: UnitOption);
-
+    
         public type: boolean;
         public symbol: string;
         public min: number;
@@ -20,221 +22,223 @@ declare namespace Units {
 
 }
 
-export type MicroSecond = typeof Unit;
-export type NanoSecond = typeof Unit;
-export type MilliSecond = typeof Unit;
-export type Second = typeof Unit;
-export type Minute = typeof Unit;
-export type Hour = typeof Unit;
-export type Day = typeof Unit;
-export type Month = typeof Unit;
-export type Year = typeof Unit;
+export interface Members{
+    MicroSecond : typeof Units.Unit;
+    NanoSecond : typeof Units.Unit;
+    MilliSecond : typeof Units.Unit;
+    Second : typeof Units.Unit;
+    Minute : typeof Units.Unit;
+    Hour : typeof Units.Unit;
+    Day : typeof Units.Unit;
+    Month : typeof Units.Unit;
+    Year : typeof Units.Unit;
 
-export type Celsius = typeof Unit;
-export type Fehrenheit = typeof Unit;
-export type Kelvin = typeof Unit;
+    Celsius : typeof Units.Unit;
+    Fehrenheit : typeof Units.Unit;
+    Kelvin : typeof Units.Unit;
 
-export type Pourcent = typeof Unit;
+    Pourcent : typeof Units.Unit;
 
-export type Bit = typeof Unit;
-export type KiloBit = typeof Unit;
-export type MegaBit = typeof Unit;
-export type GigaBit = typeof Unit;
-export type TeraBit = typeof Unit;
+    Bit : typeof Units.Unit;
+    KiloBit : typeof Units.Unit;
+    MegaBit : typeof Units.Unit;
+    GigaBit : typeof Units.Unit;
+    TeraBit : typeof Units.Unit;
 
-export type BitMicroSeconde = typeof Unit;
-export type BitNanoSeconde = typeof Unit;
-export type BitMilliSeconde = typeof Unit;
-export type BitSeconde = typeof Unit;
-export type BitMinute = typeof Unit;
-export type BitHour = typeof Unit;
-export type BitDay = typeof Unit;
-export type BitMonth = typeof Unit;
-export type BitYear = typeof Unit;
+    BitMicroSeconde : typeof Units.Unit;
+    BitNanoSeconde : typeof Units.Unit;
+    BitMilliSeconde : typeof Units.Unit;
+    BitSeconde : typeof Units.Unit;
+    BitMinute : typeof Units.Unit;
+    BitHour : typeof Units.Unit;
+    BitDay : typeof Units.Unit;
+    BitMonth : typeof Units.Unit;
+    BitYear : typeof Units.Unit;
 
-export type KiloBitMicroSeconde = typeof Unit;
-export type KiloBitNanoSeconde = typeof Unit;
-export type KiloBitMilliSeconde = typeof Unit;
-export type KiloBitSeconde = typeof Unit;
-export type KiloBitMinute = typeof Unit;
-export type KiloBitHour = typeof Unit;
-export type KiloBitDay = typeof Unit;
-export type KiloBitMonth = typeof Unit;
-export type KiloBitYear = typeof Unit;
+    KiloBitMicroSeconde : typeof Units.Unit;
+    KiloBitNanoSeconde : typeof Units.Unit;
+    KiloBitMilliSeconde : typeof Units.Unit;
+    KiloBitSeconde : typeof Units.Unit;
+    KiloBitMinute : typeof Units.Unit;
+    KiloBitHour : typeof Units.Unit;
+    KiloBitDay : typeof Units.Unit;
+    KiloBitMonth : typeof Units.Unit;
+    KiloBitYear : typeof Units.Unit;
 
-export type MegaBitMicroSeconde = typeof Unit;
-export type MegaBitNanoSeconde = typeof Unit;
-export type MegaBitMilliSeconde = typeof Unit;
-export type MegaBitSeconde = typeof Unit;
-export type MegaBitMinute = typeof Unit;
-export type MegaBitHour = typeof Unit;
-export type MegaBitDay = typeof Unit;
-export type MegaBitMonth = typeof Unit;
-export type MegaBitYear = typeof Unit;
+    MegaBitMicroSeconde : typeof Units.Unit;
+    MegaBitNanoSeconde : typeof Units.Unit;
+    MegaBitMilliSeconde : typeof Units.Unit;
+    MegaBitSeconde : typeof Units.Unit;
+    MegaBitMinute : typeof Units.Unit;
+    MegaBitHour : typeof Units.Unit;
+    MegaBitDay : typeof Units.Unit;
+    MegaBitMonth : typeof Units.Unit;
+    MegaBitYear : typeof Units.Unit;
 
-export type GigaBitMicroSeconde = typeof Unit;
-export type GigaBitNanoSeconde = typeof Unit;
-export type GigaBitMilliSeconde = typeof Unit;
-export type GigaBitSeconde = typeof Unit;
-export type GigaBitMinute = typeof Unit;
-export type GigaBitHour = typeof Unit;
-export type GigaBitDay = typeof Unit;
-export type GigaBitMonth = typeof Unit;
-export type GigaBitYear = typeof Unit;
+    GigaBitMicroSeconde : typeof Units.Unit;
+    GigaBitNanoSeconde : typeof Units.Unit;
+    GigaBitMilliSeconde : typeof Units.Unit;
+    GigaBitSeconde : typeof Units.Unit;
+    GigaBitMinute : typeof Units.Unit;
+    GigaBitHour : typeof Units.Unit;
+    GigaBitDay : typeof Units.Unit;
+    GigaBitMonth : typeof Units.Unit;
+    GigaBitYear : typeof Units.Unit;
 
-export type TeraBitMicroSeconde = typeof Unit;
-export type TeraBitNanoSeconde = typeof Unit;
-export type TeraBitMilliSeconde = typeof Unit;
-export type TeraBitSeconde = typeof Unit; 
-export type TeraBitMinute = typeof Unit;
-export type TeraBitHour = typeof Unit;
-export type TeraBitDay = typeof Unit;
-export type TeraBitMonth = typeof Unit;
-export type TeraBitYear = typeof Unit;
+    TeraBitMicroSeconde : typeof Units.Unit;
+    TeraBitNanoSeconde : typeof Units.Unit;
+    TeraBitMilliSeconde : typeof Units.Unit;
+    TeraBitSeconde : typeof Units.Unit; 
+    TeraBitMinute : typeof Units.Unit;
+    TeraBitHour : typeof Units.Unit;
+    TeraBitDay : typeof Units.Unit;
+    TeraBitMonth : typeof Units.Unit;
+    TeraBitYear : typeof Units.Unit;
 
-export type Byte = typeof Unit;
-export type KiloByte = typeof Unit;
-export type MegaByte = typeof Unit;
-export type GigaByte = typeof Unit;
-export type TeraByte = typeof Unit;
+    Byte : typeof Units.Unit;
+    KiloByte : typeof Units.Unit;
+    MegaByte : typeof Units.Unit;
+    GigaByte : typeof Units.Unit;
+    TeraByte : typeof Units.Unit;
 
-export type ByteMicroSeconde = typeof Unit;
-export type ByteNanoSeconde = typeof Unit;
-export type ByteMilliSeconde = typeof Unit;
-export type ByteSeconde = typeof Unit;
-export type ByteMinute = typeof Unit;
-export type ByteHour = typeof Unit;
-export type ByteDay = typeof Unit;
-export type ByteMonth = typeof Unit;
-export type ByteYear = typeof Unit;
+    ByteMicroSeconde : typeof Units.Unit;
+    ByteNanoSeconde : typeof Units.Unit;
+    ByteMilliSeconde : typeof Units.Unit;
+    ByteSeconde : typeof Units.Unit;
+    ByteMinute : typeof Units.Unit;
+    ByteHour : typeof Units.Unit;
+    ByteDay : typeof Units.Unit;
+    ByteMonth : typeof Units.Unit;
+    ByteYear : typeof Units.Unit;
 
-export type KiloByteMicroSeconde = typeof Unit;
-export type KiloByteNanoSeconde = typeof Unit;
-export type KiloByteMilliSeconde = typeof Unit;
-export type KiloByteSeconde = typeof Unit;
-export type KiloByteMinute = typeof Unit;
-export type KiloByteHour = typeof Unit;
-export type KiloByteDay = typeof Unit;
-export type KiloByteMonth = typeof Unit;
-export type KiloByteYear = typeof Unit;
+    KiloByteMicroSeconde : typeof Units.Unit;
+    KiloByteNanoSeconde : typeof Units.Unit;
+    KiloByteMilliSeconde : typeof Units.Unit;
+    KiloByteSeconde : typeof Units.Unit;
+    KiloByteMinute : typeof Units.Unit;
+    KiloByteHour : typeof Units.Unit;
+    KiloByteDay : typeof Units.Unit;
+    KiloByteMonth : typeof Units.Unit;
+    KiloByteYear : typeof Units.Unit;
 
-export type MegaByteMicroSeconde = typeof Unit;
-export type MegaByteNanoSeconde = typeof Unit;
-export type MegaByteMilliSeconde = typeof Unit;
-export type MegaByteSeconde = typeof Unit;
-export type MegaByteMinute = typeof Unit;
-export type MegaByteHour = typeof Unit;
-export type MegaByteDay = typeof Unit;
-export type MegaByteMonth = typeof Unit;
-export type MegaByteYear = typeof Unit;
+    MegaByteMicroSeconde : typeof Units.Unit;
+    MegaByteNanoSeconde : typeof Units.Unit;
+    MegaByteMilliSeconde : typeof Units.Unit;
+    MegaByteSeconde : typeof Units.Unit;
+    MegaByteMinute : typeof Units.Unit;
+    MegaByteHour : typeof Units.Unit;
+    MegaByteDay : typeof Units.Unit;
+    MegaByteMonth : typeof Units.Unit;
+    MegaByteYear : typeof Units.Unit;
 
-export type GigaByteMicroSeconde = typeof Unit;
-export type GigaByteNanoSeconde = typeof Unit;
-export type GigaByteMilliSeconde = typeof Unit;
-export type GigaByteSeconde = typeof Unit;
-export type GigaByteMinute = typeof Unit;
-export type GigaByteHour = typeof Unit;
-export type GigaByteDay = typeof Unit;
-export type GigaByteMonth = typeof Unit;
-export type GigaByteYear = typeof Unit;
+    GigaByteMicroSeconde : typeof Units.Unit;
+    GigaByteNanoSeconde : typeof Units.Unit;
+    GigaByteMilliSeconde : typeof Units.Unit;
+    GigaByteSeconde : typeof Units.Unit;
+    GigaByteMinute : typeof Units.Unit;
+    GigaByteHour : typeof Units.Unit;
+    GigaByteDay : typeof Units.Unit;
+    GigaByteMonth : typeof Units.Unit;
+    GigaByteYear : typeof Units.Unit;
 
-export type TeraByteMicroSeconde = typeof Unit;
-export type TeraByteNanoSeconde = typeof Unit;
-export type TeraByteMilliSeconde = typeof Unit;
-export type TeraByteSeconde = typeof Unit;
-export type TeraByteMinute = typeof Unit;
-export type TeraByteHour = typeof Unit;
-export type TeraByteDay = typeof Unit;
-export type TeraByteMonth = typeof Unit;
-export type TeraByteYear = typeof Unit;
+    TeraByteMicroSeconde : typeof Units.Unit;
+    TeraByteNanoSeconde : typeof Units.Unit;
+    TeraByteMilliSeconde : typeof Units.Unit;
+    TeraByteSeconde : typeof Units.Unit;
+    TeraByteMinute : typeof Units.Unit;
+    TeraByteHour : typeof Units.Unit;
+    TeraByteDay : typeof Units.Unit;
+    TeraByteMonth : typeof Units.Unit;
+    TeraByteYear : typeof Units.Unit;
 
-export type Octet = typeof Unit;
-export type KiloOctet = typeof Unit;
-export type MegaOctet = typeof Unit;
-export type GigaOctet = typeof Unit;
-export type TeraOctet = typeof Unit;
+    Octet : typeof Units.Unit;
+    KiloOctet : typeof Units.Unit;
+    MegaOctet : typeof Units.Unit;
+    GigaOctet : typeof Units.Unit;
+    TeraOctet : typeof Units.Unit;
 
-export type OctetMicroSeconde = typeof Unit;
-export type OctetNanoSeconde = typeof Unit;
-export type OctetMilliSeconde = typeof Unit;
-export type OctetSeconde = typeof Unit;
-export type OctetMinute = typeof Unit;
-export type OctetHour = typeof Unit;
-export type OctetDay = typeof Unit;
-export type OctetMonth = typeof Unit;
-export type OctetYear = typeof Unit;
+    OctetMicroSeconde : typeof Units.Unit;
+    OctetNanoSeconde : typeof Units.Unit;
+    OctetMilliSeconde : typeof Units.Unit;
+    OctetSeconde : typeof Units.Unit;
+    OctetMinute : typeof Units.Unit;
+    OctetHour : typeof Units.Unit;
+    OctetDay : typeof Units.Unit;
+    OctetMonth : typeof Units.Unit;
+    OctetYear : typeof Units.Unit;
 
-export type KiloOctetMicroSeconde = typeof Unit;
-export type KiloOctetNanoSeconde = typeof Unit;
-export type KiloOctetMilliSeconde = typeof Unit;
-export type KiloOctetSeconde = typeof Unit;
-export type KiloOctetMinute = typeof Unit;
-export type KiloOctetHour = typeof Unit;
-export type KiloOctetDay = typeof Unit;
-export type KiloOctetMonth = typeof Unit;
-export type KiloOctetYear = typeof Unit;
+    KiloOctetMicroSeconde : typeof Units.Unit;
+    KiloOctetNanoSeconde : typeof Units.Unit;
+    KiloOctetMilliSeconde : typeof Units.Unit;
+    KiloOctetSeconde : typeof Units.Unit;
+    KiloOctetMinute : typeof Units.Unit;
+    KiloOctetHour : typeof Units.Unit;
+    KiloOctetDay : typeof Units.Unit;
+    KiloOctetMonth : typeof Units.Unit;
+    KiloOctetYear : typeof Units.Unit;
 
-export type MegaOctetMicroSeconde = typeof Unit;
-export type MegaOctetNanoSeconde = typeof Unit;
-export type MegaOctetMilliSeconde = typeof Unit;
-export type MegaOctetSeconde = typeof Unit;
-export type MegaOctetMinute = typeof Unit;
-export type MegaOctetHour = typeof Unit;
-export type MegaOctetDay = typeof Unit;
-export type MegaOctetMonth = typeof Unit;
-export type MegaOctetYear = typeof Unit;
+    MegaOctetMicroSeconde : typeof Units.Unit;
+    MegaOctetNanoSeconde : typeof Units.Unit;
+    MegaOctetMilliSeconde : typeof Units.Unit;
+    MegaOctetSeconde : typeof Units.Unit;
+    MegaOctetMinute : typeof Units.Unit;
+    MegaOctetHour : typeof Units.Unit;
+    MegaOctetDay : typeof Units.Unit;
+    MegaOctetMonth : typeof Units.Unit;
+    MegaOctetYear : typeof Units.Unit;
 
-export type GigaOctetMicroSeconde = typeof Unit;
-export type GigaOctetNanoSeconde = typeof Unit;
-export type GigaOctetMilliSeconde = typeof Unit;
-export type GigaOctetSeconde = typeof Unit;
-export type GigaOctetMinute = typeof Unit;
-export type GigaOctetHour = typeof Unit;
-export type GigaOctetDay = typeof Unit;
-export type GigaOctetMonth = typeof Unit;
-export type GigaOctetYear = typeof Unit;
+    GigaOctetMicroSeconde : typeof Units.Unit;
+    GigaOctetNanoSeconde : typeof Units.Unit;
+    GigaOctetMilliSeconde : typeof Units.Unit;
+    GigaOctetSeconde : typeof Units.Unit;
+    GigaOctetMinute : typeof Units.Unit;
+    GigaOctetHour : typeof Units.Unit;
+    GigaOctetDay : typeof Units.Unit;
+    GigaOctetMonth : typeof Units.Unit;
+    GigaOctetYear : typeof Units.Unit;
 
-export type TeraOctetMicroSeconde = typeof Unit;
-export type TeraOctetNanoSeconde = typeof Unit;
-export type TeraOctetMilliSeconde = typeof Unit;
-export type TeraOctetSeconde = typeof Unit;
-export type TeraOctetMinute = typeof Unit;
-export type TeraOctetHour = typeof Unit;
-export type TeraOctetDay = typeof Unit;
-export type TeraOctetMonth = typeof Unit;
-export type TeraOctetYear = typeof Unit;
+    TeraOctetMicroSeconde : typeof Units.Unit;
+    TeraOctetNanoSeconde : typeof Units.Unit;
+    TeraOctetMilliSeconde : typeof Units.Unit;
+    TeraOctetSeconde : typeof Units.Unit;
+    TeraOctetMinute : typeof Units.Unit;
+    TeraOctetHour : typeof Units.Unit;
+    TeraOctetDay : typeof Units.Unit;
+    TeraOctetMonth : typeof Units.Unit;
+    TeraOctetYear : typeof Units.Unit;
 
-export type Count = typeof Unit;
+    Count : typeof Units.Unit;
 
-export type CountMicroSeconde = typeof Unit;
-export type CountNanoSeconde = typeof Unit;
-export type CountMilliSeconde = typeof Unit;
-export type CountSeconde = typeof Unit;
-export type CountMinute = typeof Unit;
-export type CountHour = typeof Unit;
-export type CountDay = typeof Unit;
-export type CountMonth = typeof Unit;
-export type CountYear = typeof Unit;
+    CountMicroSeconde : typeof Units.Unit;
+    CountNanoSeconde : typeof Units.Unit;
+    CountMilliSeconde : typeof Units.Unit;
+    CountSeconde : typeof Units.Unit;
+    CountMinute : typeof Units.Unit;
+    CountHour : typeof Units.Unit;
+    CountDay : typeof Units.Unit;
+    CountMonth : typeof Units.Unit;
+    CountYear : typeof Units.Unit;
 
-export type Hertz = typeof Unit;
-export type KiloHertz = typeof Unit;
-export type MegaHertz = typeof Unit;
-export type GigaHertz = typeof Unit;
+    Hertz : typeof Units.Unit;
+    KiloHertz : typeof Units.Unit;
+    MegaHertz : typeof Units.Unit;
+    GigaHertz : typeof Units.Unit;
 
-export type Watt = typeof Unit;
-export type KiloWatt = typeof Unit;
+    Watt : typeof Units.Unit;
+    KiloWatt : typeof Units.Unit;
 
-export type WattHour = typeof Unit;
-export type WattDay = typeof Unit;
-export type WattMonth = typeof Unit;
-export type WattYear = typeof Unit;
+    WattHour : typeof Units.Unit;
+    WattDay : typeof Units.Unit;
+    WattMonth : typeof Units.Unit;
+    WattYear : typeof Units.Unit;
 
-export type KiloWattHour = typeof Unit;
-export type KiloWattDay = typeof Unit;
-export type KiloWattMonth = typeof Unit;
-export type KiloWattYear = typeof Unit;
+    KiloWattHour : typeof Units.Unit;
+    KiloWattDay : typeof Units.Unit;
+    KiloWattMonth : typeof Units.Unit;
+    KiloWattYear : typeof Units.Unit;
 
-export type Bool = typeof Unit;
+    Bool : typeof Units.Unit;
+}
 
 export as namespace Units;
-export = Units;
+export = Members;
