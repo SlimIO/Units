@@ -9,23 +9,28 @@ const UnitType = Object.freeze({
     Octet: 7,
     OctetTime: 8,
     Count: 9,
-    Hertz: 10,
-    Watt: 11,
-    WattTime: 12,
-    Boolean: 13
+    CountTime: 10,
+    Hertz: 11,
+    Watt: 12,
+    WattTime: 13,
+    Boolean: 14
 });
 
 
 /**
  * @class Units
+ * @param {Number} type Unit type
+ * @param {String} symbol Unit symbol
+ * @param {Number} min min
+ * @param {Number} max max
  */
 class Unit {
 
     /**
      * @constructor
-     * @param {Object} options options
-     * @param {Number} options.type type
-     * @param {String} options.symbol symbol
+     * @param {Object=} options options
+     * @param {Number} options.type Unit type
+     * @param {String} options.symbol Unit symbol
      * @param {Number} options.min min
      * @param {Number} options.max max
      */
@@ -55,11 +60,11 @@ module.exports = {
 
     Pourcent: new Unit({ type: UnitType.Pourcent, symbol: "%", min: 0, max: 100 }),
 
-    Bit: new Unit({ type: UnitType.Bit, symbol: "B", min: 0 }),
-    KiloBit: new Unit({ type: UnitType.Bit, symbol: "kB", min: 0 }),
-    MegaBit: new Unit({ type: UnitType.Bit, symbol: "MB", min: 0 }),
-    GigaBit: new Unit({ type: UnitType.Bit, symbol: "GB", min: 0 }),
-    TeraBit: new Unit({ type: UnitType.Bit, symbol: "TB", min: 0 }),
+    Bit: new Unit({ type: UnitType.Bit, symbol: "b", min: 0 }),
+    KiloBit: new Unit({ type: UnitType.Bit, symbol: "kb", min: 0 }),
+    MegaBit: new Unit({ type: UnitType.Bit, symbol: "Mb", min: 0 }),
+    GigaBit: new Unit({ type: UnitType.Bit, symbol: "Gb", min: 0 }),
+    TeraBit: new Unit({ type: UnitType.Bit, symbol: "Tb", min: 0 }),
 
     BitMicroSeconde: new Unit({ type: UnitType.BitTime, symbol: "b/μs", min: 0 }),
     BitNanoSeconde: new Unit({ type: UnitType.BitTime, symbol: "b/ns", min: 0 }),
@@ -225,15 +230,15 @@ module.exports = {
 
     Count: new Unit({ type: UnitType.Count, symbol: "#", min: 0}),
 
-    CountMicroSeconde: new Unit({ type: UnitType.Count, symbol: "#/μs" }),
-    CountNanoSeconde: new Unit({ type: UnitType.Count, symbol: "#/ns" }),
-    CountMilliSeconde: new Unit({ type: UnitType.Count, symbol: "#/ms" }),
-    CountSeconde: new Unit({ type: UnitType.Count, symbol: "#/s" }),
-    CountMinute: new Unit({ type: UnitType.Count, symbol: "#/m" }),
-    CountHour: new Unit({ type: UnitType.Count, symbol: "#/h" }),
-    CountDay: new Unit({ type: UnitType.Count, symbol: "#/D" }),
-    CountMonth: new Unit({ type: UnitType.Count, symbol: "#/M" }),
-    CountYear: new Unit({ type: UnitType.Count, symbol: "#/Y" }),
+    CountMicroSeconde: new Unit({ type: UnitType.CountTime, symbol: "#/μs" }),
+    CountNanoSeconde: new Unit({ type: UnitType.CountTime, symbol: "#/ns" }),
+    CountMilliSeconde: new Unit({ type: UnitType.CountTime, symbol: "#/ms" }),
+    CountSeconde: new Unit({ type: UnitType.CountTime, symbol: "#/s" }),
+    CountMinute: new Unit({ type: UnitType.CountTime, symbol: "#/m" }),
+    CountHour: new Unit({ type: UnitType.CountTime, symbol: "#/h" }),
+    CountDay: new Unit({ type: UnitType.CountTime, symbol: "#/D" }),
+    CountMonth: new Unit({ type: UnitType.CountTime, symbol: "#/M" }),
+    CountYear: new Unit({ type: UnitType.CountTime, symbol: "#/Y" }),
 
     Hertz: new Unit({ type: UnitType.Hertz, symbol: "Hz", min: 0 }),
     KiloHertz: new Unit({ type: UnitType.Hertz, symbol: "kHz", min: 0 }),
@@ -253,5 +258,5 @@ module.exports = {
     KiloWattMonth: new Unit({ type: UnitType.WattTime, symbol: "kW/M", min: 0 }),
     KiloWattYear: new Unit({ type: UnitType.WattTime, symbol: "kW/Y", min: 0 }),
 
-    Boolean: new Unit({ type: UnitType.Boolean, symbol: "bool", min: 0, max: 1 })
+    Bool: new Unit({ type: UnitType.Boolean, symbol: "bool", min: 0, max: 1 })
 };
