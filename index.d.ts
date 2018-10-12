@@ -21,12 +21,12 @@ declare namespace Units {
     interface DefinitionOptions {
         type: number,
         symbol: string,
-        min: number,
-        max: number
+        min?: number,
+        max?: number
     }
     
     declare class UnitDefinition {
-        constructor(options?: DefinitionOptions);
+        constructor(options: DefinitionOptions);
     
         public type: UnitTypes;
         public symbol: string;
