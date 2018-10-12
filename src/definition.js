@@ -1,11 +1,11 @@
 /**
- * @class Definition
+ * @class UnitDefinition
  * @param {Number} type Unit type
  * @param {String} symbol Unit symbol
  * @param {Number} min min
  * @param {Number} max max
  */
-class Definition {
+class UnitDefinition {
 
     /**
      * @constructor
@@ -24,4 +24,4 @@ class Definition {
 
 }
 
-module.exports = Definition;
+module.exports = UnitDefinition;

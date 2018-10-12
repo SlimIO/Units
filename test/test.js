@@ -1,5 +1,5 @@
 const ava = require("ava");
-const Unit = require("../index.js");
+const Unit = require("..");
 
 ava("Unit", (assert) => {
     const milliSeconde = Unit.MilliSecond;
