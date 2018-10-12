@@ -24,7 +24,7 @@ const UnitTypes = Object.freeze({
 });
 
 module.exports = {
-    UnitTypes,
+    Types: UnitTypes,
     MicroSecond: new UnitDefinition({ type: UnitTypes.Time, symbol: "μs", min: 0 }),
     NanoSecond: new UnitDefinition({ type: UnitTypes.Time, symbol: "ns", min: 0 }),
     MilliSecond: new UnitDefinition({ type: UnitTypes.Time, symbol: "ms", min: 0 }),

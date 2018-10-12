@@ -1,6 +1,6 @@
 declare namespace Units {
 
-    export enum UnitTypes {
+    export enum Types {
         Time,
         Degree,
         Pourcent,
@@ -28,7 +28,7 @@ declare namespace Units {
     declare class UnitDefinition {
         constructor(options: DefinitionOptions);
     
-        public type: UnitTypes;
+        public type: Types;
         public symbol: string;
         public min: number;
         public max: number;
