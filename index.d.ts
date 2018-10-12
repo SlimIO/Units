@@ -1,244 +1,258 @@
-/// <reference types="node" />
-
-
-
 declare namespace Units {
 
-    interface UnitOption {
+    export enum UnitTypes {
+        Time,
+        Degree,
+        Pourcent,
+        Bit,
+        BitTime,
+        Byte,
+        ByteTime,
+        Octet,
+        OctetTime,
+        Count,
+        CountTime,
+        Hertz,
+        Watt,
+        WattTime,
+        Boolean
+    }
+
+    interface DefinitionOptions {
         type: number,
         symbol: string,
         min: number,
         max: number
     }
     
-    declare class Unit {
-        constructor(options?: UnitOption);
+    declare class UnitDefinition {
+        constructor(options?: DefinitionOptions);
     
-        public type: boolean;
+        public type: UnitTypes;
         public symbol: string;
         public min: number;
         public max: number;
     }
 
-}
+    // Others unit
+    export const Pourcent: UnitDefinition;
+    export const Bool: UnitDefinition;
+    export const Count: UnitDefinition;
 
-export interface Members{
-    MicroSecond : typeof Units.Unit;
-    NanoSecond : typeof Units.Unit;
-    MilliSecond : typeof Units.Unit;
-    Second : typeof Units.Unit;
-    Minute : typeof Units.Unit;
-    Hour : typeof Units.Unit;
-    Day : typeof Units.Unit;
-    Month : typeof Units.Unit;
-    Year : typeof Units.Unit;
+    // Time unit
+    export const MicroSecond: UnitDefinition;
+    export const NanoSecond: UnitDefinition;
+    export const MilliSecond: UnitDefinition;
+    export const Second: UnitDefinition;
+    export const Minute: UnitDefinition;
+    export const Hour: UnitDefinition;
+    export const Day: UnitDefinition;
+    export const Month: UnitDefinition;
+    export const Year: UnitDefinition;
 
-    Celsius : typeof Units.Unit;
-    Fehrenheit : typeof Units.Unit;
-    Kelvin : typeof Units.Unit;
+    // Temperature Unit
+    export const Celsius: UnitDefinition;
+    export const Fehrenheit: UnitDefinition;
+    export const Kelvin: UnitDefinition;
 
-    Pourcent : typeof Units.Unit;
+    // Bit Unit
+    export const Bit: UnitDefinition;
+    export const KiloBit: UnitDefinition;
+    export const MegaBit: UnitDefinition;
+    export const GigaBit: UnitDefinition;
+    export const TeraBit: UnitDefinition;
 
-    Bit : typeof Units.Unit;
-    KiloBit : typeof Units.Unit;
-    MegaBit : typeof Units.Unit;
-    GigaBit : typeof Units.Unit;
-    TeraBit : typeof Units.Unit;
+    export const BitMicroSeconde: UnitDefinition;
+    export const BitNanoSeconde: UnitDefinition;
+    export const BitMilliSeconde: UnitDefinition;
+    export const BitSeconde: UnitDefinition;
+    export const BitMinute: UnitDefinition;
+    export const BitHour: UnitDefinition;
+    export const BitDay: UnitDefinition;
+    export const BitMonth: UnitDefinition;
+    export const BitYear: UnitDefinition;
 
-    BitMicroSeconde : typeof Units.Unit;
-    BitNanoSeconde : typeof Units.Unit;
-    BitMilliSeconde : typeof Units.Unit;
-    BitSeconde : typeof Units.Unit;
-    BitMinute : typeof Units.Unit;
-    BitHour : typeof Units.Unit;
-    BitDay : typeof Units.Unit;
-    BitMonth : typeof Units.Unit;
-    BitYear : typeof Units.Unit;
+    export const KiloBitMicroSeconde: UnitDefinition;
+    export const KiloBitNanoSeconde: UnitDefinition;
+    export const KiloBitMilliSeconde: UnitDefinition;
+    export const KiloBitSeconde: UnitDefinition;
+    export const KiloBitMinute: UnitDefinition;
+    export const KiloBitHour: UnitDefinition;
+    export const KiloBitDay: UnitDefinition;
+    export const KiloBitMonth: UnitDefinition;
+    export const KiloBitYear: UnitDefinition;
 
-    KiloBitMicroSeconde : typeof Units.Unit;
-    KiloBitNanoSeconde : typeof Units.Unit;
-    KiloBitMilliSeconde : typeof Units.Unit;
-    KiloBitSeconde : typeof Units.Unit;
-    KiloBitMinute : typeof Units.Unit;
-    KiloBitHour : typeof Units.Unit;
-    KiloBitDay : typeof Units.Unit;
-    KiloBitMonth : typeof Units.Unit;
-    KiloBitYear : typeof Units.Unit;
+    export const MegaBitMicroSeconde: UnitDefinition;
+    export const MegaBitNanoSeconde: UnitDefinition;
+    export const MegaBitMilliSeconde: UnitDefinition;
+    export const MegaBitSeconde: UnitDefinition;
+    export const MegaBitMinute: UnitDefinition;
+    export const MegaBitHour: UnitDefinition;
+    export const MegaBitDay: UnitDefinition;
+    export const MegaBitMonth: UnitDefinition;
+    export const MegaBitYear: UnitDefinition;
 
-    MegaBitMicroSeconde : typeof Units.Unit;
-    MegaBitNanoSeconde : typeof Units.Unit;
-    MegaBitMilliSeconde : typeof Units.Unit;
-    MegaBitSeconde : typeof Units.Unit;
-    MegaBitMinute : typeof Units.Unit;
-    MegaBitHour : typeof Units.Unit;
-    MegaBitDay : typeof Units.Unit;
-    MegaBitMonth : typeof Units.Unit;
-    MegaBitYear : typeof Units.Unit;
+    export const GigaBitMicroSeconde: UnitDefinition;
+    export const GigaBitNanoSeconde: UnitDefinition;
+    export const GigaBitMilliSeconde: UnitDefinition;
+    export const GigaBitSeconde: UnitDefinition;
+    export const GigaBitMinute: UnitDefinition;
+    export const GigaBitHour: UnitDefinition;
+    export const GigaBitDay: UnitDefinition;
+    export const GigaBitMonth: UnitDefinition;
+    export const GigaBitYear: UnitDefinition;
 
-    GigaBitMicroSeconde : typeof Units.Unit;
-    GigaBitNanoSeconde : typeof Units.Unit;
-    GigaBitMilliSeconde : typeof Units.Unit;
-    GigaBitSeconde : typeof Units.Unit;
-    GigaBitMinute : typeof Units.Unit;
-    GigaBitHour : typeof Units.Unit;
-    GigaBitDay : typeof Units.Unit;
-    GigaBitMonth : typeof Units.Unit;
-    GigaBitYear : typeof Units.Unit;
+    export const TeraBitMicroSeconde: UnitDefinition;
+    export const TeraBitNanoSeconde: UnitDefinition;
+    export const TeraBitMilliSeconde: UnitDefinition;
+    export const TeraBitSeconde: UnitDefinition; 
+    export const TeraBitMinute: UnitDefinition;
+    export const TeraBitHour: UnitDefinition;
+    export const TeraBitDay: UnitDefinition;
+    export const TeraBitMonth: UnitDefinition;
+    export const TeraBitYear: UnitDefinition;
 
-    TeraBitMicroSeconde : typeof Units.Unit;
-    TeraBitNanoSeconde : typeof Units.Unit;
-    TeraBitMilliSeconde : typeof Units.Unit;
-    TeraBitSeconde : typeof Units.Unit; 
-    TeraBitMinute : typeof Units.Unit;
-    TeraBitHour : typeof Units.Unit;
-    TeraBitDay : typeof Units.Unit;
-    TeraBitMonth : typeof Units.Unit;
-    TeraBitYear : typeof Units.Unit;
+    export const Byte: UnitDefinition;
+    export const KiloByte: UnitDefinition;
+    export const MegaByte: UnitDefinition;
+    export const GigaByte: UnitDefinition;
+    export const TeraByte: UnitDefinition;
 
-    Byte : typeof Units.Unit;
-    KiloByte : typeof Units.Unit;
-    MegaByte : typeof Units.Unit;
-    GigaByte : typeof Units.Unit;
-    TeraByte : typeof Units.Unit;
+    export const ByteMicroSeconde: UnitDefinition;
+    export const ByteNanoSeconde: UnitDefinition;
+    export const ByteMilliSeconde: UnitDefinition;
+    export const ByteSeconde: UnitDefinition;
+    export const ByteMinute: UnitDefinition;
+    export const ByteHour: UnitDefinition;
+    export const ByteDay: UnitDefinition;
+    export const ByteMonth: UnitDefinition;
+    export const ByteYear: UnitDefinition;
 
-    ByteMicroSeconde : typeof Units.Unit;
-    ByteNanoSeconde : typeof Units.Unit;
-    ByteMilliSeconde : typeof Units.Unit;
-    ByteSeconde : typeof Units.Unit;
-    ByteMinute : typeof Units.Unit;
-    ByteHour : typeof Units.Unit;
-    ByteDay : typeof Units.Unit;
-    ByteMonth : typeof Units.Unit;
-    ByteYear : typeof Units.Unit;
+    export const KiloByteMicroSeconde: UnitDefinition;
+    export const KiloByteNanoSeconde: UnitDefinition;
+    export const KiloByteMilliSeconde: UnitDefinition;
+    export const KiloByteSeconde: UnitDefinition;
+    export const KiloByteMinute: UnitDefinition;
+    export const KiloByteHour: UnitDefinition;
+    export const KiloByteDay: UnitDefinition;
+    export const KiloByteMonth: UnitDefinition;
+    export const KiloByteYear: UnitDefinition;
 
-    KiloByteMicroSeconde : typeof Units.Unit;
-    KiloByteNanoSeconde : typeof Units.Unit;
-    KiloByteMilliSeconde : typeof Units.Unit;
-    KiloByteSeconde : typeof Units.Unit;
-    KiloByteMinute : typeof Units.Unit;
-    KiloByteHour : typeof Units.Unit;
-    KiloByteDay : typeof Units.Unit;
-    KiloByteMonth : typeof Units.Unit;
-    KiloByteYear : typeof Units.Unit;
+    export const MegaByteMicroSeconde: UnitDefinition;
+    export const MegaByteNanoSeconde: UnitDefinition;
+    export const MegaByteMilliSeconde: UnitDefinition;
+    export const MegaByteSeconde: UnitDefinition;
+    export const MegaByteMinute: UnitDefinition;
+    export const MegaByteHour: UnitDefinition;
+    export const MegaByteDay: UnitDefinition;
+    export const MegaByteMonth: UnitDefinition;
+    export const MegaByteYear: UnitDefinition;
 
-    MegaByteMicroSeconde : typeof Units.Unit;
-    MegaByteNanoSeconde : typeof Units.Unit;
-    MegaByteMilliSeconde : typeof Units.Unit;
-    MegaByteSeconde : typeof Units.Unit;
-    MegaByteMinute : typeof Units.Unit;
-    MegaByteHour : typeof Units.Unit;
-    MegaByteDay : typeof Units.Unit;
-    MegaByteMonth : typeof Units.Unit;
-    MegaByteYear : typeof Units.Unit;
+    export const GigaByteMicroSeconde: UnitDefinition;
+    export const GigaByteNanoSeconde: UnitDefinition;
+    export const GigaByteMilliSeconde: UnitDefinition;
+    export const GigaByteSeconde: UnitDefinition;
+    export const GigaByteMinute: UnitDefinition;
+    export const GigaByteHour: UnitDefinition;
+    export const GigaByteDay: UnitDefinition;
+    export const GigaByteMonth: UnitDefinition;
+    export const GigaByteYear: UnitDefinition;
 
-    GigaByteMicroSeconde : typeof Units.Unit;
-    GigaByteNanoSeconde : typeof Units.Unit;
-    GigaByteMilliSeconde : typeof Units.Unit;
-    GigaByteSeconde : typeof Units.Unit;
-    GigaByteMinute : typeof Units.Unit;
-    GigaByteHour : typeof Units.Unit;
-    GigaByteDay : typeof Units.Unit;
-    GigaByteMonth : typeof Units.Unit;
-    GigaByteYear : typeof Units.Unit;
+    export const TeraByteMicroSeconde: UnitDefinition;
+    export const TeraByteNanoSeconde: UnitDefinition;
+    export const TeraByteMilliSeconde: UnitDefinition;
+    export const TeraByteSeconde: UnitDefinition;
+    export const TeraByteMinute: UnitDefinition;
+    export const TeraByteHour: UnitDefinition;
+    export const TeraByteDay: UnitDefinition;
+    export const TeraByteMonth: UnitDefinition;
+    export const TeraByteYear: UnitDefinition;
 
-    TeraByteMicroSeconde : typeof Units.Unit;
-    TeraByteNanoSeconde : typeof Units.Unit;
-    TeraByteMilliSeconde : typeof Units.Unit;
-    TeraByteSeconde : typeof Units.Unit;
-    TeraByteMinute : typeof Units.Unit;
-    TeraByteHour : typeof Units.Unit;
-    TeraByteDay : typeof Units.Unit;
-    TeraByteMonth : typeof Units.Unit;
-    TeraByteYear : typeof Units.Unit;
+    export const Octet: UnitDefinition;
+    export const KiloOctet: UnitDefinition;
+    export const MegaOctet: UnitDefinition;
+    export const GigaOctet: UnitDefinition;
+    export const TeraOctet: UnitDefinition;
 
-    Octet : typeof Units.Unit;
-    KiloOctet : typeof Units.Unit;
-    MegaOctet : typeof Units.Unit;
-    GigaOctet : typeof Units.Unit;
-    TeraOctet : typeof Units.Unit;
+    export const OctetMicroSeconde: UnitDefinition;
+    export const OctetNanoSeconde: UnitDefinition;
+    export const OctetMilliSeconde: UnitDefinition;
+    export const OctetSeconde: UnitDefinition;
+    export const OctetMinute: UnitDefinition;
+    export const OctetHour: UnitDefinition;
+    export const OctetDay: UnitDefinition;
+    export const OctetMonth: UnitDefinition;
+    export const OctetYear: UnitDefinition;
 
-    OctetMicroSeconde : typeof Units.Unit;
-    OctetNanoSeconde : typeof Units.Unit;
-    OctetMilliSeconde : typeof Units.Unit;
-    OctetSeconde : typeof Units.Unit;
-    OctetMinute : typeof Units.Unit;
-    OctetHour : typeof Units.Unit;
-    OctetDay : typeof Units.Unit;
-    OctetMonth : typeof Units.Unit;
-    OctetYear : typeof Units.Unit;
+    export const KiloOctetMicroSeconde: UnitDefinition;
+    export const KiloOctetNanoSeconde: UnitDefinition;
+    export const KiloOctetMilliSeconde: UnitDefinition;
+    export const KiloOctetSeconde: UnitDefinition;
+    export const KiloOctetMinute: UnitDefinition;
+    export const KiloOctetHour: UnitDefinition;
+    export const KiloOctetDay: UnitDefinition;
+    export const KiloOctetMonth: UnitDefinition;
+    export const KiloOctetYear: UnitDefinition;
 
-    KiloOctetMicroSeconde : typeof Units.Unit;
-    KiloOctetNanoSeconde : typeof Units.Unit;
-    KiloOctetMilliSeconde : typeof Units.Unit;
-    KiloOctetSeconde : typeof Units.Unit;
-    KiloOctetMinute : typeof Units.Unit;
-    KiloOctetHour : typeof Units.Unit;
-    KiloOctetDay : typeof Units.Unit;
-    KiloOctetMonth : typeof Units.Unit;
-    KiloOctetYear : typeof Units.Unit;
+    export const MegaOctetMicroSeconde: UnitDefinition;
+    export const MegaOctetNanoSeconde: UnitDefinition;
+    export const MegaOctetMilliSeconde: UnitDefinition;
+    export const MegaOctetSeconde: UnitDefinition;
+    export const MegaOctetMinute: UnitDefinition;
+    export const MegaOctetHour: UnitDefinition;
+    export const MegaOctetDay: UnitDefinition;
+    export const MegaOctetMonth: UnitDefinition;
+    export const MegaOctetYear: UnitDefinition;
 
-    MegaOctetMicroSeconde : typeof Units.Unit;
-    MegaOctetNanoSeconde : typeof Units.Unit;
-    MegaOctetMilliSeconde : typeof Units.Unit;
-    MegaOctetSeconde : typeof Units.Unit;
-    MegaOctetMinute : typeof Units.Unit;
-    MegaOctetHour : typeof Units.Unit;
-    MegaOctetDay : typeof Units.Unit;
-    MegaOctetMonth : typeof Units.Unit;
-    MegaOctetYear : typeof Units.Unit;
+    export const GigaOctetMicroSeconde: UnitDefinition;
+    export const GigaOctetNanoSeconde: UnitDefinition;
+    export const GigaOctetMilliSeconde: UnitDefinition;
+    export const GigaOctetSeconde: UnitDefinition;
+    export const GigaOctetMinute: UnitDefinition;
+    export const GigaOctetHour: UnitDefinition;
+    export const GigaOctetDay: UnitDefinition;
+    export const GigaOctetMonth: UnitDefinition;
+    export const GigaOctetYear: UnitDefinition;
 
-    GigaOctetMicroSeconde : typeof Units.Unit;
-    GigaOctetNanoSeconde : typeof Units.Unit;
-    GigaOctetMilliSeconde : typeof Units.Unit;
-    GigaOctetSeconde : typeof Units.Unit;
-    GigaOctetMinute : typeof Units.Unit;
-    GigaOctetHour : typeof Units.Unit;
-    GigaOctetDay : typeof Units.Unit;
-    GigaOctetMonth : typeof Units.Unit;
-    GigaOctetYear : typeof Units.Unit;
+    export const TeraOctetMicroSeconde: UnitDefinition;
+    export const TeraOctetNanoSeconde: UnitDefinition;
+    export const TeraOctetMilliSeconde: UnitDefinition;
+    export const TeraOctetSeconde: UnitDefinition;
+    export const TeraOctetMinute: UnitDefinition;
+    export const TeraOctetHour: UnitDefinition;
+    export const TeraOctetDay: UnitDefinition;
+    export const TeraOctetMonth: UnitDefinition;
+    export const TeraOctetYear: UnitDefinition;
 
-    TeraOctetMicroSeconde : typeof Units.Unit;
-    TeraOctetNanoSeconde : typeof Units.Unit;
-    TeraOctetMilliSeconde : typeof Units.Unit;
-    TeraOctetSeconde : typeof Units.Unit;
-    TeraOctetMinute : typeof Units.Unit;
-    TeraOctetHour : typeof Units.Unit;
-    TeraOctetDay : typeof Units.Unit;
-    TeraOctetMonth : typeof Units.Unit;
-    TeraOctetYear : typeof Units.Unit;
+    export const CountMicroSeconde: UnitDefinition;
+    export const CountNanoSeconde: UnitDefinition;
+    export const  CountMilliSeconde: UnitDefinition;
+    export const  CountSeconde: UnitDefinition;
+    export const CountMinute: UnitDefinition;
+    export const CountHour: UnitDefinition;
+    export const CountDay: UnitDefinition;
+    export const CountMonth: UnitDefinition;
+    export const CountYear: UnitDefinition;
 
-    Count : typeof Units.Unit;
+    export const Hertz: UnitDefinition;
+    export const KiloHertz: UnitDefinition;
+    export const MegaHertz: UnitDefinition;
+    export const GigaHertz: UnitDefinition;
 
-    CountMicroSeconde : typeof Units.Unit;
-    CountNanoSeconde : typeof Units.Unit;
-    CountMilliSeconde : typeof Units.Unit;
-    CountSeconde : typeof Units.Unit;
-    CountMinute : typeof Units.Unit;
-    CountHour : typeof Units.Unit;
-    CountDay : typeof Units.Unit;
-    CountMonth : typeof Units.Unit;
-    CountYear : typeof Units.Unit;
+    export const Watt: UnitDefinition;
+    export const KiloWatt: UnitDefinition;
 
-    Hertz : typeof Units.Unit;
-    KiloHertz : typeof Units.Unit;
-    MegaHertz : typeof Units.Unit;
-    GigaHertz : typeof Units.Unit;
+    export const WattHour: UnitDefinition;
+    export const WattDay: UnitDefinition;
+    export const WattMonth: UnitDefinition;
+    export const WattYear: UnitDefinition;
 
-    Watt : typeof Units.Unit;
-    KiloWatt : typeof Units.Unit;
+    export const KiloWattHour: UnitDefinition;
+    export const KiloWattDay: UnitDefinition;
+    export const KiloWattMonth: UnitDefinition;
+    export const KiloWattYear: UnitDefinition;
 
-    WattHour : typeof Units.Unit;
-    WattDay : typeof Units.Unit;
-    WattMonth : typeof Units.Unit;
-    WattYear : typeof Units.Unit;
-
-    KiloWattHour : typeof Units.Unit;
-    KiloWattDay : typeof Units.Unit;
-    KiloWattMonth : typeof Units.Unit;
-    KiloWattYear : typeof Units.Unit;
-
-    Bool : typeof Units.Unit;
 }
 
 export as namespace Units;
-export = Members;
+export = Units;
