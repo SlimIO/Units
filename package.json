@@ -13,6 +13,12 @@
     "coverage": "npx nyc ava",
     "report": "npx nyc report --reporter=html"
   },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SlimIO/Units.git"
@@ -25,10 +31,13 @@
   },
   "homepage": "https://github.com/SlimIO/is#readme",
   "devDependencies": {
+    "@commitlint/cli": "^7.2.1",
+    "@commitlint/config-conventional": "^7.1.2",
     "@slimio/eslint-config": "^1.1.7",
     "@types/node": "^10.10.3",
     "ava": "^0.25.0",
     "eslint": "^5.6.0",
+    "husky": "^1.1.2",
     "jsdoc": "^3.5.5",
     "nyc": "^13.0.1"
   },
