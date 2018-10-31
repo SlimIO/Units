@@ -15,6 +15,13 @@ $ npm i @slimio/units
 $ yarn add @slimio/units
 ```
 
+## Roadmap
+
+- Lazy-export definitions ? (avoid excessive memory allocation).
+- Implement a name field ?
+- Implement UnitDefinition as a pure component (better cold interpretation) ?
+- Avoid is checking (trust input, add tests to check developer input).
+
 ## API
 
 ### UnitType
