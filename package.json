@@ -51,6 +51,6 @@
     "nyc": "^13.0.1"
   },
   "dependencies": {
-    "@slimio/is": "^1.2.0"
+    "@slimio/lazy": "^1.0.0"
   }
 }

@@ -15,13 +15,6 @@ $ npm i @slimio/units
 $ yarn add @slimio/units
 ```
 
-## Roadmap
-
-- Lazy-export definitions ? (avoid excessive memory allocation).
-- Implement a name field ?
-- Implement UnitDefinition as a pure component (better cold interpretation) ?
-- Avoid is checking (trust input, add tests to check developer input).
-
 ## API
 
 ### UnitType
@@ -272,15 +265,15 @@ $ yarn add @slimio/units
 
 | Name | UnitType | Symbol | Min | Max |
 | ---- | ---------|:------:| --- | --- |
-| CountMicroSeconde | CountTime | #/μs | -Infinity | Infinity |
-| CountNanoSeconde | CountTime | #/ns | -Infinity | Infinity |
-| CountMilliSeconde | CountTime | #/ms | -Infinity | Infinity |
-| CountSeconde | CountTime | #/s | -Infinity | Infinity |
-| CountMinute | CountTime | #/m | -Infinity | Infinity |
-| CountHour | CountTime | #/h | -Infinity | Infinity |
-| CountDay | CountTime | #/D | -Infinity | Infinity |
-| CountMonth | CountTime | #/M | -Infinity | Infinity |
-| CountYear | CountTime | #/Y | -Infinity | Infinity |
+| CountMicroSeconde | CountTime | #/μs | 0 | Infinity |
+| CountNanoSeconde | CountTime | #/ns | 0 | Infinity |
+| CountMilliSeconde | CountTime | #/ms | 0 | Infinity |
+| CountSeconde | CountTime | #/s | 0 | Infinity |
+| CountMinute | CountTime | #/m | 0 | Infinity |
+| CountHour | CountTime | #/h | 0 | Infinity |
+| CountDay | CountTime | #/D | 0 | Infinity |
+| CountMonth | CountTime | #/M | 0 | Infinity |
+| CountYear | CountTime | #/Y | 0 | Infinity |
 
 #### Hertz
 

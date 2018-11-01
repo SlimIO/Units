@@ -19,15 +19,17 @@ declare namespace Units {
     }
 
     interface DefinitionOptions {
+        name: string;
         type: number,
         symbol: string,
         min?: number,
         max?: number
     }
-    
+
     declare class UnitDefinition {
         constructor(options: DefinitionOptions);
-    
+
+        public name: string;
         public type: Types;
         public symbol: string;
         public min: number;
@@ -105,7 +107,7 @@ declare namespace Units {
     export const TeraBitMicroSeconde: UnitDefinition;
     export const TeraBitNanoSeconde: UnitDefinition;
     export const TeraBitMilliSeconde: UnitDefinition;
-    export const TeraBitSeconde: UnitDefinition; 
+    export const TeraBitSeconde: UnitDefinition;
     export const TeraBitMinute: UnitDefinition;
     export const TeraBitHour: UnitDefinition;
     export const TeraBitDay: UnitDefinition;
