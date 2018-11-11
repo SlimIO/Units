@@ -1,5 +1,5 @@
 # SlimIO Units
-NodeJS Javascript Unit
+SlimIO - Node.js & JavaScript units. This package is mainly used within the core and built-in addons to identify a Metric Type by name.
 
 ![MIT](https://img.shields.io/github/license/mashape/apistatus.svg)
 ![V1.0](https://img.shields.io/badge/version-1.0.0-blue.svg)
@@ -15,11 +15,32 @@ $ npm i @slimio/units
 $ yarn add @slimio/units
 ```
 
+## Usage example
+
+```js
+const Units = require("@slimio/units");
+
+console.log(Units.Bool);
+```
+
+A unit is described as follow:
+```ts
+interface Definition {
+    name: string;
+    type: number,
+    symbol: string,
+    min?: number,
+    max?: number
+}
+```
+
+> Each members of **Units** are Lazy properties !
+
 ## API
 
 ### UnitType
 | Name | Number |
-|---|:--:|
+| --- | --- |
 | Time | 0 |
 | Degree | 1 |
 | Pourcent | 2 |
@@ -40,7 +61,7 @@ $ yarn add @slimio/units
 #### Time
 
 | Name | UnitType | Symbol | Min | Max |
-| ---- | ---------|:------:| --- | --- |
+| --- | --- | --- | --- | --- |
 | MicroSecond | Time | μs | 0 | Infinity |
 | NanoSecond | Time | ns | 0 | Infinity |
 | MilliSecond | Time | ms | 0 | Infinity |
@@ -55,7 +76,7 @@ $ yarn add @slimio/units
 #### Degree
 
 | Name | UnitType | Symbol | Min | Max |
-| ---- | ---------|:------:| --- | --- |
+| --- | --- | --- | --- | --- |
 | Celsius | Degree | C | -273.12 | Infinity |
 | Fehrenheit | Degree | F | -459.67 | Infinity |
 | Kelvin | Degree | K | 0 | Infinity |
@@ -64,14 +85,14 @@ $ yarn add @slimio/units
 #### Pourcent
 
 | Name | UnitType | Symbol | Min | Max |
-| ---- | ---------|:------:| --- | --- |
+| --- | --- | --- | --- | --- |
 | Pourcent | Pourcent | % | 0 | 100 |
 
 
 #### Bit
 
 | Name | UnitType | Symbol | Min | Max |
-| ---- | ---------|:------:| --- | --- |
+| ---- | ---------| ------ | --- | --- |
 | Bit | Bit | B | 0 | Infinity |
 | KiloBit | Bit | kB | 0 | Infinity |
 | MegaBit | Bit | MB | 0 | Infinity |
@@ -82,7 +103,7 @@ $ yarn add @slimio/units
 #### BitTime
 
 | Name | UnitType | Symbol | Min | Max |
-| ---- | ---------|:------:| --- | --- |
+| --- | --- | --- | --- | --- |
 | BitMicroSeconde | BitTime | b/μs | 0 | Infinity |
 | BitNanoSeconde | BitTime | b/ns | 0 | Infinity |
 | BitMilliSeconde | BitTime | b/ms | 0 | Infinity |
@@ -133,7 +154,7 @@ $ yarn add @slimio/units
 #### Byte
 
 | Name | UnitType | Symbol | Min | Max |
-| ---- | ---------|:------:| --- | --- |
+| --- | --- | --- | --- | --- |
 | Byte | Byte | B | 0 | Infinity |
 | KiloByte | Byte | kB | 0 | Infinity |
 | MegaByte | Byte | MB | 0 | Infinity |
@@ -144,7 +165,7 @@ $ yarn add @slimio/units
 #### ByteTime
 
 | Name | UnitType | Symbol | Min | Max |
-| ---- | ---------|:------:| --- | --- |
+| --- | --- | --- | --- | --- |
 | ByteMicroSeconde | ByteTime | B/μs | 0 | Infinity |
 | ByteNanoSeconde | ByteTime | B/ns | 0 | Infinity |
 | ByteMilliSeconde | ByteTime | B/ms | 0 | Infinity |
@@ -195,7 +216,7 @@ $ yarn add @slimio/units
 #### Octet
 
 | Name | UnitType | Symbol | Min | Max |
-| ---- | ---------|:------:| --- | --- |
+| --- | --- | --- | --- | --- |
 | Octet | Octet | o | 0 | Infinity |
 | KiloOctet | Octet | ko | 0 | Infinity |
 | MegaOctet | Octet | Mo | 0 | Infinity |
@@ -206,7 +227,7 @@ $ yarn add @slimio/units
 #### OctetTime
 
 | Name | UnitType | Symbol | Min | Max |
-| ---- | ---------|:------:| --- | --- |
+| --- | --- | --- | --- | --- |
 | OctetMicroSeconde | OctetTime | o/μs | 0 | Infinity |
 | OctetNanoSeconde | OctetTime | o/ns | 0 | Infinity |
 | OctetMilliSeconde | OctetTime | o/ms | 0 | Infinity |
@@ -257,14 +278,14 @@ $ yarn add @slimio/units
 #### Count
 
 | Name | UnitType | Symbol | Min | Max |
-| ---- | ---------|:------:| --- | --- |
+| --- | --- | --- | --- | --- |
 | Count | Count | # | 0 | Infinity |
 
 
 #### CountTime
 
 | Name | UnitType | Symbol | Min | Max |
-| ---- | ---------|:------:| --- | --- |
+| --- | --- | --- | --- | --- |
 | CountMicroSeconde | CountTime | #/μs | 0 | Infinity |
 | CountNanoSeconde | CountTime | #/ns | 0 | Infinity |
 | CountMilliSeconde | CountTime | #/ms | 0 | Infinity |
@@ -278,7 +299,7 @@ $ yarn add @slimio/units
 #### Hertz
 
 | Name | UnitType | Symbol | Min | Max |
-| ---- | ---------|:------:| --- | --- |
+| --- | --- | --- | --- | --- |
 | Hertz | Hertz | Hz | 0 | Infinity |
 | KiloHertz | Hertz | kHz | 0 | Infinity |
 | MegaHertz | Hertz | MHz | 0 | Infinity |
@@ -288,7 +309,7 @@ $ yarn add @slimio/units
 #### Watt
 
 | Name | UnitType | Symbol | Min | Max |
-| ---- | ---------|:------:| --- | --- |
+| --- | --- | --- | --- | --- |
 | Watt | Watt | W | 0 | Infinity |
 | KiloWatt | Watt | kW | 0 | Infinity |
 
@@ -296,7 +317,7 @@ $ yarn add @slimio/units
 #### WattTime
 
 | Name | UnitType | Symbol | Min | Max |
-| ---- | ---------|:------:| --- | --- |
+| --- | --- | --- | --- | --- |
 | WattHour | WattTime | W/h | 0 | Infinity |
 | WattDay | WattTime | W/D | 0 | Infinity |
 | WattMonth | WattTime | W/M | 0 | Infinity |
@@ -309,7 +330,7 @@ $ yarn add @slimio/units
 #### Boolean
 
 | Name | UnitType | Symbol | Min | Max |
-| ---- | ---------|:------:| --- | --- |
+| --- | --- | --- | --- | --- |
 | Bool | Boolean | bool | 0 | 1 |
 
 
