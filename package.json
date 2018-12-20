@@ -1,7 +1,7 @@
 {
   "name": "@slimio/units",
   "version": "0.3.0",
-  "description": "SlimIO Units",
+  "description": "SlimIO Metrics Units",
   "main": "index.js",
   "engines": {
     "node": ">=10"
@@ -32,7 +32,11 @@
     "type": "git",
     "url": "git+https://github.com/SlimIO/Units.git"
   },
-  "keywords": [],
+  "keywords": [
+      "SlimIO",
+      "Units",
+      "Metrics Type"
+  ],
   "author": "SlimIO",
   "license": "MIT",
   "bugs": {
