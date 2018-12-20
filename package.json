@@ -54,6 +54,6 @@
     "pkg-ok": "^2.3.1"
   },
   "dependencies": {
-    "@slimio/lazy": "^1.0.0"
+    "@slimio/lazy": "^1.2.0"
   }
 }
