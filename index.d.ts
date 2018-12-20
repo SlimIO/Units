@@ -26,7 +26,7 @@ declare namespace Units {
         max?: number
     }
 
-    declare class UnitDefinition {
+    class UnitDefinition {
         constructor(options: DefinitionOptions);
 
         public name: string;
