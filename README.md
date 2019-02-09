@@ -2,7 +2,7 @@
 SlimIO - Node.js & JavaScript units. This package is mainly used within the core and built-in addons to identify a Metric Type by name.
 
 ![MIT](https://img.shields.io/github/license/mashape/apistatus.svg)
-![V1.0](https://img.shields.io/badge/version-0.3.1-blue.svg)
+![Version](https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/SlimIO/Units/master/package.json&query=$.version&label=Version)
 ![0DEP](https://img.shields.io/badge/Dependencies-0-yellow.svg)
 
 ## Getting Started

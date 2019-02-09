@@ -33,9 +33,9 @@
     "url": "git+https://github.com/SlimIO/Units.git"
   },
   "keywords": [
-      "SlimIO",
-      "Units",
-      "Metrics Type"
+    "SlimIO",
+    "Units",
+    "Metrics Type"
   ],
   "author": "SlimIO",
   "license": "MIT",
