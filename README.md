@@ -4,6 +4,7 @@ SlimIO - Node.js & JavaScript units. This package is mainly used within the core
 ![MIT](https://img.shields.io/github/license/mashape/apistatus.svg)
 ![Version](https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/SlimIO/Units/master/package.json&query=$.version&label=Version)
 ![0DEP](https://img.shields.io/badge/Dependencies-0-yellow.svg)
+[![Build Status](https://travis-ci.com/SlimIO/Units.svg?branch=master)](https://travis-ci.com/SlimIO/Units)
 
 ## Getting Started
 
