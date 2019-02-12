@@ -374,6 +374,6 @@ interface Definition {
 </details>
 
 
-## Licence
+## License
 
 MIT
