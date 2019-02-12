@@ -62,7 +62,8 @@ interface Definition {
 
 ### Units
 
-#### Time
+<details>
+    <summary>Time</summary>
 
 | Name | UnitType | Symbol | Min | Max |
 | --- | --- | --- | --- | --- |
@@ -75,25 +76,31 @@ interface Definition {
 | Day | Time | D | 0 | Infinity |
 | Month | Time | M | 0 | Infinity |
 | Year | Time | Y | 0 | Infinity |
+<br/>
+</details>
 
-
-#### Degree
+<details>
+    <summary>Degree</summary>
 
 | Name | UnitType | Symbol | Min | Max |
 | --- | --- | --- | --- | --- |
 | Celsius | Degree | C | -273.12 | Infinity |
 | Fehrenheit | Degree | F | -459.67 | Infinity |
 | Kelvin | Degree | K | 0 | Infinity |
+<br/>
+</details>
 
-
-#### Pourcent
+<details>
+    <summary>Pourcent</summary>
 
 | Name | UnitType | Symbol | Min | Max |
 | --- | --- | --- | --- | --- |
 | Pourcent | Pourcent | % | 0 | 100 |
+<br/>
+</details>
 
-
-#### Bit
+<details>
+    <summary>Bit</summary>
 
 | Name | UnitType | Symbol | Min | Max |
 | ---- | ---------| ------ | --- | --- |
@@ -102,9 +109,11 @@ interface Definition {
 | MegaBit | Bit | MB | 0 | Infinity |
 | GigaBit | Bit | GB | 0 | Infinity |
 | TeraBit | Bit | TB | 0 | Infinity |
+<br/>
+</details>
 
-
-#### BitTime
+<details>
+    <summary>BitTime</summary>
 
 | Name | UnitType | Symbol | Min | Max |
 | --- | --- | --- | --- | --- |
@@ -153,9 +162,11 @@ interface Definition {
 | TeraBitDay | BitTime | Tb/D | 0 | Infinity |
 | TeraBitMonth | BitTime | Tb/M | 0 | Infinity |
 | TeraBitYear | BitTime | Tb/Y | 0 | Infinity |
+<br/>
+</details>
 
-
-#### Byte
+<details>
+    <summary>Byte</summary>
 
 | Name | UnitType | Symbol | Min | Max |
 | --- | --- | --- | --- | --- |
@@ -164,9 +175,11 @@ interface Definition {
 | MegaByte | Byte | MB | 0 | Infinity |
 | GigaByte | Byte | GB | 0 | Infinity |
 | TeraByte | Byte | TB | 0 | Infinity |
+<br/>
+</details>
 
-
-#### ByteTime
+<details>
+    <summary>ByteTime</summary>
 
 | Name | UnitType | Symbol | Min | Max |
 | --- | --- | --- | --- | --- |
@@ -215,9 +228,11 @@ interface Definition {
 | TeraByteDay | ByteTime | TB/D | 0 | Infinity |
 | TeraByteMonth | ByteTime | TB/M | 0 | Infinity |
 | TeraByteYear | ByteTime | TB/Y | 0 | Infinity |
+<br/>
+</details>
 
-
-#### Octet
+<details>
+    <summary>Octet</summary>
 
 | Name | UnitType | Symbol | Min | Max |
 | --- | --- | --- | --- | --- |
@@ -226,9 +241,11 @@ interface Definition {
 | MegaOctet | Octet | Mo | 0 | Infinity |
 | GigaOctet | Octet | Go | 0 | Infinity |
 | TeraOctet | Octet | To | 0 | Infinity |
+<br/>
+</details>
 
-
-#### OctetTime
+<details>
+    <summary>OctetTime</summary>
 
 | Name | UnitType | Symbol | Min | Max |
 | --- | --- | --- | --- | --- |
@@ -277,16 +294,22 @@ interface Definition {
 | TeraOctetDay | OctetTime | To/D | 0 | Infinity |
 | TeraOctetMonth | OctetTime | To/M | 0 | Infinity |
 | TeraOctetYear | OctetTime | To/Y | 0 | Infinity |
+<br/>
+</details>
 
 
-#### Count
+<details>
+    <summary>Count</summary>
 
 | Name | UnitType | Symbol | Min | Max |
 | --- | --- | --- | --- | --- |
 | Count | Count | # | 0 | Infinity |
+<br/>
+</details>
 
 
-#### CountTime
+<details>
+    <summary>CountTime</summary>
 
 | Name | UnitType | Symbol | Min | Max |
 | --- | --- | --- | --- | --- |
@@ -299,8 +322,11 @@ interface Definition {
 | CountDay | CountTime | #/D | 0 | Infinity |
 | CountMonth | CountTime | #/M | 0 | Infinity |
 | CountYear | CountTime | #/Y | 0 | Infinity |
+<br/>
+</details>
 
-#### Hertz
+<details>
+    <summary>Hertz</summary>
 
 | Name | UnitType | Symbol | Min | Max |
 | --- | --- | --- | --- | --- |
@@ -308,17 +334,22 @@ interface Definition {
 | KiloHertz | Hertz | kHz | 0 | Infinity |
 | MegaHertz | Hertz | MHz | 0 | Infinity |
 | GigaHertz | Hertz | GHz | 0 | Infinity |
+<br/>
+</details>
 
-
-#### Watt
+<details>
+    <summary>Watt</summary>
 
 | Name | UnitType | Symbol | Min | Max |
 | --- | --- | --- | --- | --- |
 | Watt | Watt | W | 0 | Infinity |
 | KiloWatt | Watt | kW | 0 | Infinity |
+<br/>
+</details>
 
 
-#### WattTime
+<details>
+    <summary>WattTime</summary>
 
 | Name | UnitType | Symbol | Min | Max |
 | --- | --- | --- | --- | --- |
@@ -330,12 +361,17 @@ interface Definition {
 | KiloWattDay | WattTime | kW/D | 0 | Infinity |
 | KiloWattMonth | WattTime | kW/M | 0 | Infinity |
 | KiloWattYear | WattTime | kW/Y | 0 | Infinity |
+<br/>
+</details>
 
-#### Boolean
+<details>
+    <summary>Boolean</summary>
 
 | Name | UnitType | Symbol | Min | Max |
 | --- | --- | --- | --- | --- |
 | Bool | Boolean | bool | 0 | 1 |
+<br/>
+</details>
 
 
 ## Licence
