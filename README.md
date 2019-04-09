@@ -9,6 +9,9 @@
 
 SlimIO - Node.js & JavaScript units. This package is mainly used within the core and built-in addons to identify a Metric Type by name.
 
+## Requirements
+- Node.js v10 or higher
+
 ## Getting Started
 
 This package is available in the Node Package Repository and can be easily installed with [npm](https://docs.npmjs.com/getting-started/what-is-npm) or [yarn](https://yarnpkg.com).
@@ -375,5 +378,4 @@ interface Definition {
 
 
 ## License
-
 MIT
