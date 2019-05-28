@@ -376,6 +376,8 @@ interface Definition {
 <br/>
 </details>
 
+## Dependencies
+|[@slimio/lazy](https://github.com/SlimIO/Lazy#readme)|Minor|Low|Set lazy properties on Objects|
 
 ## License
 MIT
