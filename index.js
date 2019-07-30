@@ -1,15 +1,17 @@
+"use strict";
+
 // Require Third-party Dependencies
 const lazy = require("@slimio/lazy");
 
 /**
- * @constructor
+ * @class
  * @function Unit
- * @param {Object} options Unit options
- * @param {!String} options.name Unit name
- * @param {!Number} options.type Unit type
- * @param {!String} options.symbol Unit symbol
- * @param {Number=} [options.min=0] min
- * @param {Number=} [options.max=Infinity] max
+ * @param {object} options Unit options
+ * @param {!string} options.name Unit name
+ * @param {!number} options.type Unit type
+ * @param {!string} options.symbol Unit symbol
+ * @param {number} [options.min=0] min
+ * @param {number} [options.max=Infinity] max
  */
 function Unit(options) {
     this.name = options.name;
@@ -20,8 +22,8 @@ function Unit(options) {
 }
 
 /**
- * @const Types
- * @desc Enumeration of available Unit Types
+ * @constant Types
+ * @description Enumeration of available Unit Types
  */
 const Types = Object.freeze({
     Time: 0,
