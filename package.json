@@ -34,8 +34,18 @@
   },
   "keywords": [
     "SlimIO",
-    "Units",
-    "Metrics Type"
+    "monitoring",
+    "units",
+    "type",
+    "metrics",
+    "kind",
+    "time",
+    "watt",
+    "pourcent",
+    "bit",
+    "byte",
+    "octet",
+    "hertz"
   ],
   "files": [
       "index.js",
