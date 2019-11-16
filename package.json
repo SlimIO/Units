@@ -4,7 +4,7 @@
   "description": "SlimIO Metrics Units",
   "main": "index.js",
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   },
   "private": false,
   "scripts": {
