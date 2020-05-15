@@ -6,7 +6,6 @@
 ![size](https://img.shields.io/bundlephobia/min/@slimio/units.svg?style=flat)
 [![Known Vulnerabilities](https://snyk.io/test/github/SlimIO/Units/badge.svg?targetFile=package.json)](https://snyk.io/test/github/SlimIO/Units?targetFile=package.json)
 [![Build Status](https://travis-ci.com/SlimIO/Units.svg?branch=master)](https://travis-ci.com/SlimIO/Units)
-[![Greenkeeper badge](https://badges.greenkeeper.io/SlimIO/Units.svg)](https://greenkeeper.io/)
 
 SlimIO - Node.js & JavaScript units. This package is mainly used within the core and built-in addons to identify a Metric Type by name.
 
