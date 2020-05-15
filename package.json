@@ -12,7 +12,9 @@
     "test": "cross-env psp && ava --verbose",
     "doc": "jsdoc -c ./jsdoc.json -r -R ./README.md -P ./package.json --verbose",
     "coverage": "nyc npm test",
-    "report": "nyc report --reporter=html"
+    "report": "nyc report --reporter=html",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "husky": {
     "hooks": {
@@ -72,6 +74,8 @@
     "pkg-ok": "^2.3.1"
   },
   "dependencies": {
-    "@slimio/lazy": "^1.2.0"
-  }
+    "@slimio/lazy": "^1.2.0",
+    "snyk": "^1.321.0"
+  },
+  "snyk": true
 }
