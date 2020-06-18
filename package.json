@@ -12,7 +12,9 @@
     "test": "cross-env psp && nyc --reporter=lcov ava --verbose",
     "doc": "jsdoc -c ./jsdoc.json -r -R ./README.md -P ./package.json --verbose",
     "coverage": "codecov",
-    "report": "nyc report --reporter=html"
+    "report": "nyc report --reporter=html",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "husky": {
     "hooks": {
@@ -73,6 +75,8 @@
     "pkg-ok": "^2.3.1"
   },
   "dependencies": {
-    "@slimio/lazy": "^1.2.0"
-  }
+    "@slimio/lazy": "^1.2.0",
+    "snyk": "^1.342.2"
+  },
+  "snyk": true
 }
